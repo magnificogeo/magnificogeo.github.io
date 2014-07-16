@@ -1,0 +1,11 @@
+.manage_contact_container {
+	background-color:#282828;
+	position:absolute;
+	border-top-left-radius: 17px;
+	border-bottom-left-radius: 17px;
+	top:50px;
+	right:0px;
+	width:280px;
+	height:580px;
+	overflow-x:hidden;
+}

@@ -16,7 +16,7 @@
   <body>
     
     <!-- navbar -->
-      <nav class="top-bar" data-topbar>
+      <nav class="top-bar" ng-controller="NavBarController" data-topbar>
         <ul class="title-area">
           <li class="name">
             <h1><a href="#"></a></h1>
@@ -28,8 +28,8 @@
         <section class="top-bar-section">
           <!-- Right Nav Section -->
           <ul class="right">
-            <li class="active"><a href="#">Filter</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Filter</a></li>
+            <li><a href="#" ng-click="showManageContacts()">Contacts</a></li>
           </ul>
         </section>
       </nav>
@@ -64,6 +64,18 @@
         </div>
 
     </div>
+
+    <!-- contact screen -->
+    <ManageContactDirective class="ng-hide">
+
+
+    </ManageContactDirective>
+    <!-- chat modal -->
+
+
+    <!-- filter modal -->
+
+
     
     <script src="vendor/foundation/js/vendor/jquery.js"></script>
     <script src="vendor/foundation/js/foundation.min.js"></script>

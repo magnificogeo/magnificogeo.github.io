@@ -1,15 +1,15 @@
 // instantiate an angular object for the main app
-var fbApp = angular.module('fbApp',[]);
+var fbApp = angular.module('fbApp',['ngAnimate']);
 
 fbApp.controller("CardStackController", function($scope,$http) {
 
 	$scope.profile_stack = [];
 
 	$scope.clickLater = function() {
-		alert('lolapalooza!');
+		alert('click later succeed');
 	}
 
 	$scope.clickMeet = function() {
-		alert('hahaha!');
+		alert('click meet succeed');
 	}
 });

@@ -28,8 +28,8 @@ body {
 }
 
 .later_meet_btn_grp {
-	position:absolute;
-	top:475px;
+	position:relative;
+	top:85px;
 	left:40px;
 }
 
@@ -63,7 +63,7 @@ body {
 	position:absolute;
 	margin-top:11px;
 	margin-left:36px;
-	height:35%;	
+	height:225px;	
 	width:311px;
 	border-top-left-radius:17px;
 	border-top-right-radius:17px;

@@ -30,7 +30,7 @@ body {
 .later_meet_btn_grp {
 	position:relative;
 	top:85px;
-	left:40px;
+	padding-left:40px;
 }
 
 .later_btn {

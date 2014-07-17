@@ -1,4 +1,11 @@
-<div id="myModal" class="reveal-modal" data-reveal>
 
+<div id="chatModal" class="reveal-modal" data-reveal>
+  <input type="text" ng-model="messageToSend" placeholder="type here to begin..."></input>
+  <button ng-click="addMessage()">Send</button>
+
+
+
+  <p></p>
+  {{getChatMessages}}
   <a class="close-reveal-modal">&#215;</a>
 </div>

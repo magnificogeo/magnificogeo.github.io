@@ -51,22 +51,48 @@ fbApp.directive('managecontactdirective', function() {
 * Contact Card List Controller
 */
 fbApp.controller("ContactCardListController", function($scope,$http) {
-
 	$scope.openChat = function() {
-		$($('#myModal')[0]).foundation('reveal', 'open');
+		$($('#chatModal')[0]).foundation('reveal', 'open');
 	}
 });
 
 /***
 * Chat modal directive
 */
-fbApp.directive("chatmodaldirective", function() {
+fbApp.directive("chatmodaldirective", ['chatSession', '$interval', function(chatSession) {
 	return {
 		restrict: 'E',
 		scope: true,
 		templateUrl: 'templates/chatmodal.html',
-		controller: function($scope,$http) {
+		controller: function($scope,$http,chatSession,$interval) {
+			$scope.chatUser = "George",
+			$scope.getChatMessages = chatSession.getMessages();
+			$scope.messageToSend = "hooyah";
+			$scope.addMessage = function() {
+				chatSession.addMessage($scope.messageToSend);
+				$interval(chatSession.getMessages()); // this is used to continously poll for messages
+			};
+
 
 		}
 	}
+}]);
+
+/***
+* Chat Service
+***/
+fbApp.factory("chatSession", function() {
+	var ref = new Firebase("https://vivid-fire-1609.firebaseio.com/")
+	return {
+	      getMessages: function() {
+	        var messages = [];
+	        ref.on("child_added", function(snapshot) {
+	          messages.push(snapshot.val());
+	        });
+	        return messages;
+	      },
+	      addMessage: function(message) {
+	        ref.push(message);
+	      }
+	    }
 });

@@ -51,5 +51,22 @@ fbApp.directive('managecontactdirective', function() {
 * Contact Card List Controller
 */
 fbApp.controller("ContactCardListController", function($scope,$http) {
-	
+
+	$scope.openChat = function() {
+		$($('#myModal')[0]).foundation('reveal', 'open');
+	}
+});
+
+/***
+* Chat modal directive
+*/
+fbApp.directive("chatmodaldirective", function() {
+	return {
+		restrict: 'E',
+		scope: true,
+		templateUrl: 'templates/chatmodal.html',
+		controller: function($scope,$http) {
+
+		}
+	}
 });

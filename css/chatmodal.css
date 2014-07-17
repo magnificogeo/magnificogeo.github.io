@@ -5,8 +5,15 @@
 	border-radius:20px;
 	background:#282828;
 	width:384px;
-	height:620px;
-	padding-left:15px;
+	height:580px;
+	padding-left:17px;
+}
+
+.close-reveal-modal {
+	position:relative;
+	top:20px;
+	right:20px;
+	font-size:32px;
 }
 
 .chatbox_util_box {
@@ -82,7 +89,7 @@
 .chatbox_window {
 	position:absolute;
 	top:80px;
-	height: 460px;
+	height: 415px;
 	width: 347px;	
 	background-color:#F6F6F6;
 	border-radius:8px;
@@ -94,7 +101,7 @@
 
 .chatbox_controls {
 	position:relative;
-	top:550px;
+	top:508px;
 }
 
 .chatbox_controls input {

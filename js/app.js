@@ -50,6 +50,7 @@ fbApp.controller("ContactCardListController", function($scope,$http) {
 	$scope.openChat = function() {
 		//$($('#chatModal')[0]).foundation('reveal', 'open');
 		$($('#chatModal')[0]).removeClass('ng-hide');
+		$($('managecontactdirective')[0]).removeClass('ng-hide');
 	}
 });
 
@@ -70,8 +71,7 @@ fbApp.directive("chatmodaldirective", ['chatSession', '$interval', function(chat
 				$interval(chatSession.getMessages()); // this is used to continously poll for messages
 			};
 
-
-			$scope.closeModal = function() {
+			$scope.closeChat = function() {
 				$($('#chatModal')[0]).addClass('ng-hide');
 			}
 

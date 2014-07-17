@@ -4,7 +4,73 @@
 }
 
 .chatbox_util_box {
-	
+	position:absolute;
+	top:15px;
+	width:320px;
+	height:60px;
+}
+
+.chatbox_util_box_profile_img img {
+	position:relative;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin:auto;
+    float:left;
+	height: 50px;
+	width: 50px;    
+	/*border:6px #71fc94 solid;*/
+    /*background-image:url('https://media.licdn.com/media/p/2/000/221/367/27186e4.jpg');*/
+    background-repeat:no-repeat;
+    /*background-position:-85px -25px;*/
+    /*background-size:160%;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    /*-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    /*transform: rotate(45deg);*/
+}
+
+.chatbox_util_box_recco {
+	float:left;
+	height:50px;
+	width:50px;
+	background-image:url('../img/CC-bcc.png');
+	background-repeat:no-repeat;
+	background-size:90%;
+	background-position:center;
+	margin-left:90px;
+}
+
+.chatbox_util_box_attachment {
+	float:left;
+	height:50px;
+	width:50px;
+	background-image:url('../img/Attachment.png');
+	background-repeat:no-repeat;
+	background-size:55%;
+	background-position:center;
+	margin-left:5px;
+}
+
+.chatbox_util_box_linkedin {
+	float:left;
+	height:50px;
+	width:50px;
+	background-image:url('../img/linkedin.png');
+	background-repeat:no-repeat;
+	background-size:90%;
+	background-position:center;
+	margin-left:5px;
+}
+
+.chatbox_util_profile_name {
+	position:relative;
+	width:20px;
+	font-family: 'Open Sans', sans-serif;
+	color:#FCFCFC;
+	float: left;
+	font-weight: bold;
+	font-size: 8px;
+	text-align:center;
 }
 
 .chatbox_window {
@@ -34,6 +100,6 @@
 
 .chatbox_controls button {	
 	float:left;
-	margin-left:10px;
+	margin-left:20px;
 	border-radius:8px;
 }

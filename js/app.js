@@ -5,7 +5,6 @@ var fbApp = angular.module('fbApp',['ngAnimate']);
 * Nav Bar Controller
 ***/
 fbApp.controller("NavBarController", function($scope,$http) {
-
 	$scope.showManageContacts = function() {
 		if ( $($('managecontactdirective')[0]).hasClass('ng-hide') ) {
 			$($('managecontactdirective')[0]).removeClass('ng-hide');
@@ -13,14 +12,11 @@ fbApp.controller("NavBarController", function($scope,$http) {
 			$($('managecontactdirective')[0]).addClass('ng-hide');
 		}
 	}
-
-
 });
 /***
 * Card Stack Controller
 */
 fbApp.controller("CardStackController", function($scope,$http) {
-
 	$scope.profile_stack = []; // this array will hold the data
 
 	$scope.clickLater = function() {

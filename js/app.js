@@ -6,8 +6,6 @@ var fbApp = angular.module('fbApp',['ngAnimate']);
 ***/
 fbApp.controller("NavBarController", function($scope,$http) {
 
-	$scope.testvar = 'hellolol';
-
 	$scope.showManageContacts = function() {
 		if ( $($('managecontactdirective')[0]).hasClass('ng-hide') ) {
 			$($('managecontactdirective')[0]).removeClass('ng-hide');
@@ -47,4 +45,11 @@ fbApp.directive('managecontactdirective', function() {
 
 		}
 	}
+});
+
+/***
+* Contact Card List Controller
+*/
+fbApp.controller("ContactCardListController", function($scope,$http) {
+	
 });

@@ -1,0 +1,39 @@
+#chatModal {
+	border-radius:20px;
+	background:#282828;
+}
+
+.chatbox_util_box {
+	
+}
+
+.chatbox_window {
+	position:absolute;
+	top:80px;
+	height: 480px;
+	width: 340px;	
+	background-color:#F6F6F6;
+	border-radius:8px;
+	margin:auto;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	padding: 10px 10px 10px 10px;
+}
+
+.chatbox_controls {
+	position:relative;
+	top:550px;
+}
+
+.chatbox_controls input {
+	width:220px;
+	float:left;
+	height:50px;
+	border-radius:8px;
+}
+
+.chatbox_controls button {	
+	float:left;
+	margin-left:10px;
+	border-radius:8px;
+}

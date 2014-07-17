@@ -67,7 +67,7 @@ fbApp.directive("chatmodaldirective", ['chatSession', '$interval', function(chat
 		controller: function($scope,$http,chatSession,$interval) {
 			$scope.chatUser = "George",
 			$scope.getChatMessages = chatSession.getMessages();
-			$scope.messageToSend = "hooyah";
+			$scope.messageToSend = "";
 			$scope.addMessage = function() {
 				chatSession.addMessage($scope.messageToSend);
 				$interval(chatSession.getMessages()); // this is used to continously poll for messages

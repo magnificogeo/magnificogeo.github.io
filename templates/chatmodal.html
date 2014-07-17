@@ -1,11 +1,16 @@
-
+<link rel="stylesheet" href="css/chatmodal.css">
 <div id="chatModal" class="reveal-modal" data-reveal>
-  <input type="text" ng-model="messageToSend" placeholder="type here to begin..."></input>
-  <button ng-click="addMessage()">Send</button>
 
 
+  <div class="chatbox_window">
+  	{{getChatMessages}}
+  </div>
 
-  <p></p>
-  {{getChatMessages}}
+  <div class="chatbox_controls">
+  	<input type="text" ng-model="messageToSend" placeholder="type here to begin..."></input>
+  	<button ng-click="addMessage()">Send</button>
+  </div>
+
+
   <a class="close-reveal-modal">&#215;</a>
 </div>

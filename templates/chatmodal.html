@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="css/chatmodal.css">
-<div id="chatModal" class="reveal-modal" data-reveal>
+<!-- <div id="chatModal" class="reveal-modal" data-reveal> -->
+<div id="chatModal" class="ng-hide">
 
   <div class="chatbox_util_box">
   	<div class="chatbox_util_box_profile_img">
@@ -30,5 +31,5 @@
   </div>
 
 
-  <a class="close-reveal-modal">&#215;</a>
+  <a class="close-reveal-modal" ng-click="closeModal()">&#215;</a>
 </div>

@@ -1,6 +1,12 @@
 #chatModal {
+	position:absolute;
+	top:0px;
+	left:0px;
 	border-radius:20px;
 	background:#282828;
+	width:384px;
+	height:620px;
+	padding-left:15px;
 }
 
 .chatbox_util_box {
@@ -76,8 +82,8 @@
 .chatbox_window {
 	position:absolute;
 	top:80px;
-	height: 480px;
-	width: 340px;	
+	height: 460px;
+	width: 347px;	
 	background-color:#F6F6F6;
 	border-radius:8px;
 	margin:auto;
@@ -94,7 +100,7 @@
 .chatbox_controls input {
 	width:220px;
 	float:left;
-	height:50px;
+	height:55px;
 	border-radius:8px;
 }
 

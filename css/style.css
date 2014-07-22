@@ -10,7 +10,12 @@ body {
 	background-color:#262C3A;
 }
 
-/* Classes */
+.screen_find_event {
+	text-align:center;
+}
+
+
+/* Card Stack Classes */
 
 .card_stack {
 	width:384px;

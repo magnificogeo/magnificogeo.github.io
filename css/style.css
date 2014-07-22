@@ -10,10 +10,25 @@ body {
 	background-color:#262C3A;
 }
 
-.screen_find_event {
+#screen_find_event {
 	text-align:center;
 }
 
+#screen_card_match {
+	text-align:center;
+}
+
+#screen_card_manage_contact {
+	text-align: center;
+}
+
+#screen_card_match_filter {
+	text-align:center;
+}
+
+#screen_card_chat {
+	text-align:center;
+}
 
 /* Card Stack Classes */
 

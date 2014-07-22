@@ -1,6 +1,12 @@
 // instantiate an angular object for the main app
 var fbApp = angular.module('fbApp',['ngAnimate']);
 
+
+/***
+* Routes
+***/
+
+
 /***
 * Nav Bar Controller
 ***/

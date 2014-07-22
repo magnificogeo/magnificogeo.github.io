@@ -2,8 +2,12 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
-	background-color:#303447;
+	background-color:#262C3A;
 	overflow:hidden;
+}
+
+.top-bar {
+	background-color:#262C3A;
 }
 
 /* Classes */
@@ -21,10 +25,12 @@ body {
 .card_stack_active_card {
 	width:384px;
 	height:500px;
-	background-image:url('../img/card_stack_profile_bg.png');
+	/*background-image:url('../img/card_stack_profile_bg.png');
 	background-repeat:no-repeat;
 	background-position:center;
-	background-size: 81%;
+	background-size: 81%;*/
+	background-color:white;
+	border-radius:17px;
 }
 
 .later_meet_btn_grp {

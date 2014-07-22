@@ -3,7 +3,7 @@
 
 body {
 	background-color:#262C3A;
-	overflow:hidden;
+	overflow-x:hidden;
 }
 
 .top-bar {

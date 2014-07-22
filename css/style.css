@@ -2,7 +2,11 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
-	background-color:#262C3A;
+	/*background-color:#262C3A;*/
+	background-image:url('../img/body_bg.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:100% 100%;
 	overflow-x:hidden;
 }
 

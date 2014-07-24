@@ -11,18 +11,46 @@
 
     <!-- load scripts -->
     <script src="//cdn.firebase.com/js/client/1.0.6/firebase.js"></script>
-    <script src="vendor/angular-animate/angular-animate.js"></script>
-    <script src="vendor/angular-route/angular-route.js"></script>
+    <!-- <script src="vendor/angular-animate/angular-animate.js"></script>
+    <script src="vendor/angular-route/angular-route.js"></script> -->
     <script src="js/app.js"></script>
     <script>
       window.scrollTo(0,1);
     </script>
 
-
   </head>
   <body>
+
+    <!-- Find Event Screen -->
+
+      <!-- Menu Bar -->
+      <div class="fb_menu_bar clearfix">
+          <div id="fb_menu_bar_drawer_icon"></div>
+          <div id="fb_menu_bar_option_icon"></div>
+          <div id="fb_menu_bar_notification_icon"></div>
+      </div>
+
+      <!-- Event Search Box -->
+      <div class="fb_event_search_box">
+        <div id="fb_event_search_box_bg">
+        <input type="text" id="fb_event_search_box_input" placeholder="Enter event name or type">
+        </div>
+
+
+      </div>
+
+      <!-- Event Search Body Box -->
+      <div class="fb_event_body_box">
+      </div>
+
+
+
+    <br> <br>
+
+
     
-    <!-- screen find event -->
+    <!-- Mock ups -->
+
     <div id="screen_find_event">
       <a href="#screen_card_match"><img src="img/screen_find_event.png"></a>
     </div>
@@ -42,53 +70,6 @@
     <div id="screen_card_chat">
       <a href="#screen_find_event"><img src="img/screen_card_chat.png"></a>
     </div>
-
- 
-
-    <!-- card stack 
-    <div class="card_stack" ng-controller="CardStackController">
-
-        <div class="card_stack_active_card">
-          
-            <div class="card_stack_profile_cover_img">
-            </div>
-
-            <div class="card_stack_profile_img">
-            </div>
-
-            <div class="card_stack_profile_summary">
-              <div id="profile_name">George Moh</div>
-              <div id="profile_position">Software Engineer at Liquor.com</div>
-            </div>
-
-            <hr id="top_divider">
-              <div class="card_stack_profile_tagline">
-                <div id="profile_tagline">Internet Entrepreneur looking for co-founders</div>
-              </div>
-            <hr id="btm_divider">
-
-            <div class="later_meet_btn_grp">
-              <div class="later_btn" ng-click="clickLater()"></div>
-              <div class="meet_btn" ng-click="clickMeet()"></div>
-            </div>
-        </div>
-
-    </div>
-
-    -->
-
-    <!-- contact screen -->
-    <managecontactdirective class="ng-hide">
-
-
-    </managecontactdirective>
-    <!-- chat modal -->
-    <chatmodaldirective>
-    </chatmodaldirective>
-
-    <!-- filter modal -->
-
-
     
     <script src="vendor/foundation/js/vendor/jquery.js"></script>
     <script src="vendor/foundation/js/foundation.min.js"></script>

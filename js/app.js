@@ -1,17 +1,6 @@
 // Instantiate an angular object for the main app
-// Current dependencies: Angular Animate, Angular Route
-var fbApp = angular.module('fbApp',['ngAnimate','ngRoute']); 
-
-
-/***
-* Routes
-***/
-fbApp.config(['ngRoute'], function($routeProvider) {
-	$routeProvider.when('/phones', {
-		templateUrl: 'http://google.com/'
-	});
-});
-
+// Current dependencies: None
+var fbApp = angular.module('fbApp',[]); 
 
 /***
 * Nav Bar Controller

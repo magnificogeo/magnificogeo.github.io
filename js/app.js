@@ -1,6 +1,21 @@
 // Instantiate an angular object for the main app
 // Current dependencies: None
-var fbApp = angular.module('fbApp',[]); 
+var fbApp = angular.module('fbApp',['ngRoute']); 
+
+/**
+* Routes
+*/
+
+fbApp.config(function($routeProvider) {
+		$routeProvider
+
+			// route for the home page
+			.when('/matching', {
+				templateUrl : 'match_screen.html',
+				controller  : 'matchControllerr'
+			})
+	});
+
 
 /***
 * Nav Bar Controller

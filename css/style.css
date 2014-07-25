@@ -101,20 +101,66 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size:1em;
 	font-weight:300;
+	margin-bottom:10px;
 }
 
 .fb_event_body_box_event_card {
-	/* screen_find_event_event_card: */ 
+	/* screen_find_event_event_card: */   
 	height:99px;
 	width:90%;
-	margin-top:10px;
+	margin-top:4px;
+	/* screen_find_event_event_card: */
 	background-image: -o-linear-gradient(0deg, #1E2027 0%, #262B39 100%);
 	background-image: -moz-linear-gradient(0deg, #1E2027 0%, #262B39 100%);
 	background-image: -ms-linear-gradient(0deg, #1E2027 0%, #262B39 100%);
 	background-image: linear-gradient(-90deg, #1E2027 0%, #262B39 100%);
 	border: 1px solid #2B3242;
+	-moz-box-shadow:    5px 2px 4px 0px rgba(0,0,0,0.50);
+	box-shadow:         5px 2px 4px 0px rgba(0,0,0,0.50);
+	display:inline-block;
 }
 
+.fb_event_body_box_event_card_event_icon img {
+	float:left;
+	position:relative;
+	width:15%;
+	height:15%;
+	margin-top:25px;
+	margin-left:25px;
+
+}
+
+.fb_event_body_box_event_name {
+	float:left;
+	position:relative;
+	color:#FCFCFC;
+	font-family: 'Roboto', sans-serif;
+	font-size:0.6em;
+	margin-top:25px;
+	margin-left:20px;
+	font-weight:bold;
+}
+
+.fb_event_body_box_event_details {
+	font-size:0.4em;
+	font-weight:300;
+	height:10px;
+}
+
+.fb_event_body_box_event_desc {
+	font-size:0.4em;
+	font-weight:300;
+	height:10px;
+}
+
+.fb_event_body_box_event_number_join {
+	color:#9AE0A3;
+}
+
+.fb_event_body_box_event_name span {
+	position:relative;
+	
+}
 
 /*** Find Event Screen ***/
 

@@ -8,12 +8,14 @@ var fbApp = angular.module('fbApp',['ngRoute']);
 
 fbApp.config(function($routeProvider) {
 		$routeProvider
-
-			// route for the home page
-			.when('/matching', {
-				templateUrl : 'match_screen.html',
-				controller  : 'matchControllerr'
+			.when('/', {
+				templateUrl : 'index.html',
+				//controller  : 'indexController'
 			})
+			.when('/match', {
+				templateUrl : 'match.html',
+				//controller  : 'matchController'
+			});
 	});
 
 

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" ng-app="fbApp">
+<html class="no-js" lang="en" ng-app="fbApp" ng-view>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1.0" />
@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="vendor/foundation/js/vendor/modernizr.js"></script>
     <script src="vendor/angular/angular.js"></script> 
+    <script src="js/app.js"></script>
     <script src="vendor/angular-route/angular-route.js"></script>
 
     <!-- load scripts -->
     <script src="//cdn.firebase.com/js/client/1.0.6/firebase.js"></script>
     <!-- <script src="vendor/angular-animate/angular-animate.js"></script>
     <script src="vendor/angular-route/angular-route.js"></script> -->
-    <script src="js/app.js"></script>
+    
     <script>
       window.scrollTo(0,1);
     </script>
@@ -42,7 +43,7 @@
       <!-- Event Search Body Box -->
       <div class="fb_event_body_box">
         <div id="fb_event_body_box_heading">Available Networks</div>
-        <div class="fb_event_body_box_event_card">
+        <a href="/#/match"><div class="fb_event_body_box_event_card">
           <div class="fb_event_body_box_event_card_event_icon">
             <img src="img/event_icon_google_io.png">
             <span class="fb_event_body_box_event_name">
@@ -55,8 +56,8 @@
                 </span>
             </span>
           </div>
-        </div>
-        <div class="fb_event_body_box_event_card">
+        </div></a>
+        <a href="/#/match"><div class="fb_event_body_box_event_card">
           <div class="fb_event_body_box_event_card_event_icon">
             <img src="img/event_icon_expo_asia.png">
             <span class="fb_event_body_box_event_name">
@@ -69,8 +70,8 @@
                 </span>
             </span>
           </div>
-        </div>
-        <div class="fb_event_body_box_event_card">
+        </div></a>
+        <a href="/#/match"><div class="fb_event_body_box_event_card">
           <div class="fb_event_body_box_event_card_event_icon">
             <img src="img/event_icon_ces.png">
             <span class="fb_event_body_box_event_name">
@@ -83,8 +84,8 @@
                 </span>
             </span>
           </div>
-        </div>
-        <div class="fb_event_body_box_event_card">
+        </div></a>
+        <a href="/#/match"><div class="fb_event_body_box_event_card">
           <div class="fb_event_body_box_event_card_event_icon">
             <img src="img/event_icon_sgbiz.png">
             <span class="fb_event_body_box_event_name">
@@ -97,7 +98,7 @@
                 </span>
             </span>
           </div>
-        </div>
+        </div></a>
       </div>
 
 

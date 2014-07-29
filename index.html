@@ -5,21 +5,25 @@
     <meta name="viewport" content="initial-scale=1.0" />
     <title>Fistbump 0.2</title>
     <link rel="stylesheet" href="vendor/foundation/css/foundation.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" media="(max-width:800px)"/>
     <script src="vendor/foundation/js/vendor/modernizr.js"></script>
     <script src="vendor/angular/angular.js"></script> 
     <script src="js/app.js"></script>
     <script src="vendor/angular-route/angular-route.js"></script>
+    <script>
+ 
+      if ( window.outerWidth > 768 ) {
+        window.open(window.location, "", "width=360, height=640");
+        window.scrollTo
+      }
+      
+    
+    </script>
 
     <!-- load scripts -->
     <script src="//cdn.firebase.com/js/client/1.0.6/firebase.js"></script>
     <!-- <script src="vendor/angular-animate/angular-animate.js"></script>
     <script src="vendor/angular-route/angular-route.js"></script> -->
-    
-    <script>
-      window.scrollTo(0,1);
-    </script>
-
   </head>
   <body ng-view>
 

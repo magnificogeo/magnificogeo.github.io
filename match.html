@@ -16,16 +16,20 @@
     <script src="vendor/angular-route/angular-route.js"></script> -->
     <script src="js/app.js"></script>
     <script>
-      addEventListener("click", function() {
-            var
-                  el = document.documentElement
-                , rfs =
-                       el.requestFullScreen
-                    || el.webkitRequestFullScreen
-                    || el.mozRequestFullScreen
-            ;
-            rfs.call(el);
-        });
+      function launchFullscreen(element) {
+        if(element.requestFullscreen) {
+          element.requestFullscreen();
+        } else if(element.mozRequestFullScreen) {
+          element.mozRequestFullScreen();
+        } else if(element.webkitRequestFullscreen) {
+          element.webkitRequestFullscreen();
+        } else if(element.msRequestFullscreen) {
+          element.msRequestFullscreen();
+        }
+      }
+
+      // Launch fullscreen for browsers that support it!
+      launchFullScreen(document);
     </script>
 
 

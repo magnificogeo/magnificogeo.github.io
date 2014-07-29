@@ -246,6 +246,8 @@
 		background:#262C3A;
 		width:100%;
 		height:80px;
+		position:relative;
+		margin-top:-100px;
 	}
 
 	.fb_match_later_button_icon {

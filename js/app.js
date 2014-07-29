@@ -58,6 +58,18 @@ fbApp.controller("profilePageController", function($scope,$http) {
 			profile_title:"Head of Sales at Joo Seng Pte Ltd",
 			profile_photo:"https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xaf1/t1.0-9/403168_10150586693139682_218634990_n.jpg",
 			profile_tagline:"Hope to meet PR/Journalists in the tech industry"
+		},
+		{
+			profile_name:"T800",
+			profile_title:"Cybernetic Organism",
+			profile_photo:"http://upload.wikimedia.org/wikipedia/en/b/b9/Terminator-2-judgement-day.jpg",
+			profile_tagline:"Come with me if you want to live"
+		},
+		{
+			profile_name:"Arnold Schwarzenegger",
+			profile_title:"7 times Mr Olympia",
+			profile_photo:"http://imagopolo.info/img/arnold_schwarzenegger/7.jpeg",
+			profile_tagline:"Milk is for babies. when you grow up you have to drink beer."
 		}]
 	}; // this array will hold the data
 

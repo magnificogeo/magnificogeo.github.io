@@ -10,27 +10,7 @@
     <script src="vendor/angular/angular.js"></script> 
     <script src="js/app.js"></script>
     <script src="vendor/angular-route/angular-route.js"></script>
-    <script>
- 
-      if ( window.outerWidth > 768 ) {
-        window.open(window.location, "", "width=360, height=640");
-        function launchFullscreen(element) {
-        if(element.requestFullscreen) {
-          element.requestFullscreen();
-        } else if(element.mozRequestFullScreen) {
-          element.mozRequestFullScreen();
-        } else if(element.webkitRequestFullscreen) {
-          element.webkitRequestFullscreen();
-        } else if(element.msRequestFullscreen) {
-          element.msRequestFullscreen();
-        }
-      }
 
-      // Launch fullscreen for browsers that support it!
-      launchFullScreen(document);
-      
-    
-    </script>
 
     <!-- load scripts -->
     <script src="//cdn.firebase.com/js/client/1.0.6/firebase.js"></script>

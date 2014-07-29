@@ -238,7 +238,8 @@
 
 	.fb_match_profile_body {
 		background:#262C3A;
-		height:297px;
+		/*height:297px;*/
+		height:247px;
 		width:100%;
 	}
 

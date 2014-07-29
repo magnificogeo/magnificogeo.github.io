@@ -14,7 +14,16 @@
  
       if ( window.outerWidth > 768 ) {
         window.open(window.location, "", "width=360, height=640");
-        window.scrollTo
+        addEventListener("click", function() {
+            var
+                  el = document.documentElement
+                , rfs =
+                       el.requestFullScreen
+                    || el.webkitRequestFullScreen
+                    || el.mozRequestFullScreen
+            ;
+            rfs.call(el);
+        });
       }
       
     

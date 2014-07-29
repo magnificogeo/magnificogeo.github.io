@@ -313,9 +313,10 @@
 	.fb_match_profile_filter_button_text {
 		text-align:center;
 		top:7px;
+		left:7px;
 		color:#FCFCFC;
 		font-family: 'Roboto', sans-serif;
-		font-size:1em;
+		font-size:0.9em;
 		font-style:italic;
 		font-weight:400;
 		position:relative;

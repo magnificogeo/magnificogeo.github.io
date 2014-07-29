@@ -34,15 +34,66 @@ fbApp.controller("NavBarController", function($scope,$http) {
 /***
 * Card Stack Controller
 */
-fbApp.controller("CardStackController", function($scope,$http) {
-	$scope.profile_stack = []; // this array will hold the data
+fbApp.controller("profilePageController", function($scope,$http) {
+	
+	$scope.clickLater_count = 0;
+	
+ 	
+	$scope.profile_stack = {
+		profile:[
+		{
+			profile_name:"George Moh",
+			profile_photo:"https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xfp1/t1.0-9/969759_10151538556586451_978416852_n.jpg",
+			profile_title:"Software Engineer at Beng Huat Electronics",
+			profile_tagline:"Internet Entrepreneur looking for Co-founders."
+		},
+		{
+			profile_name:"Ian Loke",
+			profile_title:"Embedded Software Engineer at Toys'Rus",
+			profile_photo:"https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/335346_10150433708213305_840705482_o.jpg",
+			profile_tagline:"Looking for distributors in SEA region"
+		},
+		{
+			profile_name:"Oh Joo Siong",
+			profile_title:"Head of Sales at Joo Seng Pte Ltd",
+			profile_photo:"https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xaf1/t1.0-9/403168_10150586693139682_218634990_n.jpg",
+			profile_tagline:"Hope to meet PR/Journalists in the tech industry"
+		}]
+	}; // this array will hold the data
+
+
+	/* Initial binding */
+	$scope.fb_match_profile_name = $scope.profile_stack.profile[0].profile_name;
+	$scope.fb_match_profile_photo = $scope.profile_stack.profile[0].profile_photo;
+	$scope.fb_match_profile_title = $scope.profile_stack.profile[0].profile_title;
+	$scope.fb_match_profile_tagline = $scope.profile_stack.profile[0].profile_tagline;
 
 	$scope.clickLater = function() {
-		alert('click later succeed');
+		
+		/* Two way data binding is updated here */
+		$scope.clickLater_count++;
+	
+		if ( $scope.clickLater_count == $scope.profile_stack.profile.length) {
+			$scope.clickLater_count = 0; //reset profile stack to top
+		}
+		$scope.fb_match_profile_name = $scope.profile_stack.profile[$scope.clickLater_count].profile_name;
+		$scope.fb_match_profile_photo = $scope.profile_stack.profile[$scope.clickLater_count].profile_photo;
+		$scope.fb_match_profile_title = $scope.profile_stack.profile[$scope.clickLater_count].profile_title;
+		$scope.fb_match_profile_tagline = $scope.profile_stack.profile[$scope.clickLater_count].profile_tagline;
+
 	}
 
 	$scope.clickMeet = function() {
-		alert('click meet succeed');
+		/* Two way data binding is updated here */
+		$scope.clickLater_count++;
+	
+		if ( $scope.clickLater_count == $scope.profile_stack.profile.length) {
+			$scope.clickLater_count = 0; //reset profile stack to top
+		}
+		$scope.fb_match_profile_name = $scope.profile_stack.profile[$scope.clickLater_count].profile_name;
+		$scope.fb_match_profile_photo = $scope.profile_stack.profile[$scope.clickLater_count].profile_photo;
+		$scope.fb_match_profile_title = $scope.profile_stack.profile[$scope.clickLater_count].profile_title;
+		$scope.fb_match_profile_tagline = $scope.profile_stack.profile[$scope.clickLater_count].profile_tagline;
 	}
 });
 

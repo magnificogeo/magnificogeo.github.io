@@ -326,21 +326,21 @@
 
 	.meet_animation {
       -webkit-animation-name: meet_animation;
-      -webkit-animation-duration: 0.2s;
+      -webkit-animation-duration: 0.3s;
       -webkit-animation-iteration-count: 1;
       -webkit-animation-timing-function: ease-out;
     }
 
     .later_animation {
       -webkit-animation-name: later_animation;
-      -webkit-animation-duration: 0.2s;
+      -webkit-animation-duration: 0.3s;
       -webkit-animation-iteration-count: 1;
       -webkit-animation-timing-function: ease-out;
     }
 
     .expand_animation {
       -webkit-animation-name: expand_animation;
-      -webkit-animation-duration: 0.1s;
+      -webkit-animation-duration: 0.3s;
       -webkit-animation-iteration-count: 1;
       -webkit-animation-timing-function: ease-out;
     }

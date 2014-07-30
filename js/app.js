@@ -109,6 +109,11 @@ fbApp.controller("profilePageController", function($scope,$http) {
 		if ( $scope.clickLater_count == $scope.profile_stack.profile.length) {
 			$scope.clickLater_count = 0; //reset profile stack to top
 		}
+
+		// Filter button comes up after a few swipes
+		if ( $scope.clickLater_count > 3 ) {
+			$($('.fb_match_profile_filter_button')[0]).removeClass('ng-hide');
+		}
 		$scope.fb_match_profile_name = $scope.profile_stack.profile[$scope.clickLater_count].profile_name;
 		$scope.fb_match_profile_photo = $scope.profile_stack.profile[$scope.clickLater_count].profile_photo;
 		$scope.fb_match_profile_title = $scope.profile_stack.profile[$scope.clickLater_count].profile_title;
@@ -137,6 +142,11 @@ fbApp.controller("profilePageController", function($scope,$http) {
 		// two way data binding is updated here
 		if ( $scope.clickMeet_count == $scope.profile_stack.profile.length) {
 			$scope.clickMeet_count = 0; //reset profile stack to top
+		}
+
+		// Filter button comes up after a few swipes
+		if ( $scope.clickMeet_count > 3 ) {
+			$($('.fb_match_profile_filter_button')[0]).removeClass('ng-hide');
 		}
 		$scope.fb_match_profile_name = $scope.profile_stack.profile[$scope.clickMeet_count].profile_name;
 		$scope.fb_match_profile_photo = $scope.profile_stack.profile[$scope.clickMeet_count].profile_photo;

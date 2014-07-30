@@ -3,7 +3,7 @@
 var fbApp = angular.module('fbApp',['ngRoute']); 
 
 /**
-* Routes
+* Routes for front-end. Invoked via the ng-view attribute in DOM
 */
 
 fbApp.config(function($routeProvider) {
@@ -15,6 +15,9 @@ fbApp.config(function($routeProvider) {
 			.when('/match', {
 				templateUrl : 'match.html',
 				//controller  : 'matchController'
+			}).when('/chat', {
+				templateUrl : 'chat.html',
+				//controller : 'chatController'
 			});
 	});
 
@@ -32,14 +35,19 @@ fbApp.controller("NavBarController", function($scope,$http) {
 	}
 });
 /***
-* Card Stack Controller
+*  Match Page Controller
 */
 fbApp.controller("profilePageController", function($scope,$http) {
 	
-	
+	// Counter to count the number of times the user clicked on later/meet button, also used as index to traverse profile stack
 	$scope.clickLater_count = 0;
+	$scope.clickMeet_count = 0;
+
+	// Array to hold meet and later profile stacks
+	$scope.profile_meet_stack = [];
+	$scope.profile_later_stack = [];
 	
- 	
+ 	// This is a mocked up profile stack. In actual operations we'll have to do a AJAX query to repopulate once stack reaches a certain array length
 	$scope.profile_stack = {
 		profile:[
 		{
@@ -75,7 +83,7 @@ fbApp.controller("profilePageController", function($scope,$http) {
 	}; // this array will hold the data
 
 
-	/* Initial binding */
+	// Initial data binding to DOM elements
 	$scope.fb_match_profile_name = $scope.profile_stack.profile[0].profile_name;
 	$scope.fb_match_profile_photo = $scope.profile_stack.profile[0].profile_photo;
 	$scope.fb_match_profile_title = $scope.profile_stack.profile[0].profile_title;
@@ -83,7 +91,7 @@ fbApp.controller("profilePageController", function($scope,$http) {
 
 	$scope.clickLater = function() {
 
-		// start animation
+		// start later_animation
 		$($('.profile_carousel')[0]).addClass('later_animation');
 
 		// after the animation is done hide it again
@@ -95,7 +103,7 @@ fbApp.controller("profilePageController", function($scope,$http) {
 			}, 200);
 		}, 200);
 		
-		/* Two way data binding is updated here */
+		// two way data binding is updated here 
 		$scope.clickLater_count++;
 	
 		if ( $scope.clickLater_count == $scope.profile_stack.profile.length) {
@@ -109,9 +117,9 @@ fbApp.controller("profilePageController", function($scope,$http) {
 	}
 
 	$scope.clickMeet = function() {
-		/* Two way data binding is updated here */
+		
 
-		// start animation
+		// start meet_animation
 		$($('.profile_carousel')[0]).addClass('meet_animation');
 
 		// after the animation is done hide it again
@@ -124,15 +132,16 @@ fbApp.controller("profilePageController", function($scope,$http) {
 		}, 200);
 
 
-		$scope.clickLater_count++;
-	
-		if ( $scope.clickLater_count == $scope.profile_stack.profile.length) {
-			$scope.clickLater_count = 0; //reset profile stack to top
+		$scope.clickMeet_count++;
+		
+		// two way data binding is updated here
+		if ( $scope.clickMeet_count == $scope.profile_stack.profile.length) {
+			$scope.clickMeet_count = 0; //reset profile stack to top
 		}
-		$scope.fb_match_profile_name = $scope.profile_stack.profile[$scope.clickLater_count].profile_name;
-		$scope.fb_match_profile_photo = $scope.profile_stack.profile[$scope.clickLater_count].profile_photo;
-		$scope.fb_match_profile_title = $scope.profile_stack.profile[$scope.clickLater_count].profile_title;
-		$scope.fb_match_profile_tagline = $scope.profile_stack.profile[$scope.clickLater_count].profile_tagline;
+		$scope.fb_match_profile_name = $scope.profile_stack.profile[$scope.clickMeet_count].profile_name;
+		$scope.fb_match_profile_photo = $scope.profile_stack.profile[$scope.clickMeet_count].profile_photo;
+		$scope.fb_match_profile_title = $scope.profile_stack.profile[$scope.clickMeet_count].profile_title;
+		$scope.fb_match_profile_tagline = $scope.profile_stack.profile[$scope.clickMeet_count].profile_tagline;
 	
 
 	}

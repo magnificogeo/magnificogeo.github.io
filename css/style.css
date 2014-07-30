@@ -403,6 +403,11 @@
 	}
 
 	/* Chat Screen Styles */
+
+	.fb_chat_container {
+		width:100%;
+		height:100%;
+	}
 	.fb_chat_profile_card {
 		width:100%;
 		height:70px;
@@ -417,11 +422,68 @@
 	}
 
 	.fb_chat_body_box {
+		position:relative;
 		width:100%;
-		height:80%;
+		height:70%;
 		background-color:#EEEEEE;
-		z-index:1000;
+	}
 
+	.fb_chat_input_box {
+		position:relative;
+		width:100%;
+		height:12.5%;
+		background-color:#262C3A;
+	}
+
+	.fb_chat_input_line {
+		position:relative;
+		background-color:#EEEEEE;
+		top:10px;
+		width:100%;
+		height:70%;
+	}
+
+	.fb_chat_input_box input {
+		position: relative;
+		float:left;
+		width: 80%;
+		height:100%;
+		color: #959595;
+		border:none;
+		text-align: left;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1em;
+		font-weight: 300;
+		background-color: transparent;
+		outline: none;
+		box-shadow: none;
+	}
+
+	.fb_chat_input_box input:hover { 
+	    outline: none; 
+	    box-shadow: none;
+	    background-color:transparent;
+	} 
+	.fb_chat_input_box input:focus { 
+	    outline: none; 
+	    box-shadow: none;
+	    background-color:transparent;
+	} 
+	.fb_chat_input_box input:active { 
+	    outline: none;
+	    box-shadow: none;
+	    background-color:transparent;
+	}
+
+	.fb_chat_arrow {
+		margin-left:25px;
+		margin-top:10px;
+		float:left;
+		height:32px;
+		width:32px;
+		background-image:url('../img/chat_arrow.png');
+		background-repeat:no-repeat;
+		background-size:100%;
 	}
 
 	/*** Mock Ups Style ***/

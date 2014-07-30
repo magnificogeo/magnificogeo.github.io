@@ -82,6 +82,18 @@ fbApp.controller("profilePageController", function($scope,$http) {
 	$scope.fb_match_profile_tagline = $scope.profile_stack.profile[0].profile_tagline;
 
 	$scope.clickLater = function() {
+
+		// start animation
+		$($('.profile_carousel')[0]).addClass('later_animation');
+
+		// after the animation is done hide it again
+		setTimeout(function() {
+			$($('.profile_carousel')[0]).removeClass('later_animation');
+			$($('.profile_carousel')[0]).addClass('expand_animation');
+			setTimeout(function() {
+				$($('.profile_carousel')[0]).removeClass('expand_animation');
+			}, 200);
+		}, 200);
 		
 		/* Two way data binding is updated here */
 		$scope.clickLater_count++;
@@ -101,10 +113,15 @@ fbApp.controller("profilePageController", function($scope,$http) {
 
 		// start animation
 		$($('.profile_carousel')[0]).addClass('meet_animation');
+
 		// after the animation is done hide it again
 		setTimeout(function() {
 			$($('.profile_carousel')[0]).removeClass('meet_animation');
-		}, 300);
+			$($('.profile_carousel')[0]).addClass('expand_animation');
+			setTimeout(function() {
+				$($('.profile_carousel')[0]).removeClass('expand_animation');
+			}, 200);
+		}, 200);
 
 
 		$scope.clickLater_count++;

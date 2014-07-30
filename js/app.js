@@ -36,6 +36,7 @@ fbApp.controller("NavBarController", function($scope,$http) {
 */
 fbApp.controller("profilePageController", function($scope,$http) {
 	
+	
 	$scope.clickLater_count = 0;
 	
  	
@@ -97,6 +98,15 @@ fbApp.controller("profilePageController", function($scope,$http) {
 
 	$scope.clickMeet = function() {
 		/* Two way data binding is updated here */
+
+		// start animation
+		$($('.profile_carousel')[0]).addClass('meet_animation');
+		// after the animation is done hide it again
+		setTimeout(function() {
+			$($('.profile_carousel')[0]).removeClass('meet_animation');
+		}, 300);
+
+
 		$scope.clickLater_count++;
 	
 		if ( $scope.clickLater_count == $scope.profile_stack.profile.length) {
@@ -106,6 +116,8 @@ fbApp.controller("profilePageController", function($scope,$http) {
 		$scope.fb_match_profile_photo = $scope.profile_stack.profile[$scope.clickLater_count].profile_photo;
 		$scope.fb_match_profile_title = $scope.profile_stack.profile[$scope.clickLater_count].profile_title;
 		$scope.fb_match_profile_tagline = $scope.profile_stack.profile[$scope.clickLater_count].profile_tagline;
+	
+
 	}
 });
 

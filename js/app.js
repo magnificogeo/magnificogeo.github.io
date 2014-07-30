@@ -561,6 +561,7 @@ fbApp.controller("profilePageController", function($scope,$http) {
 
 		// start later_animation
 		$($('.profile_carousel')[0]).addClass('later_animation');
+		$($('.fb_match_progressbar')[0]).removeClass('ng-hide');
 
 		// after the animation is done hide it again
 		setTimeout(function() {
@@ -568,6 +569,7 @@ fbApp.controller("profilePageController", function($scope,$http) {
 			$($('.profile_carousel')[0]).addClass('expand_animation');
 			setTimeout(function() {
 				$($('.profile_carousel')[0]).removeClass('expand_animation');
+				$($('.fb_match_progressbar')[0]).addClass('ng-hide');
 			}, 200);
 		}, 200);
 		
@@ -594,13 +596,14 @@ fbApp.controller("profilePageController", function($scope,$http) {
 
 		// start meet_animation
 		$($('.profile_carousel')[0]).addClass('meet_animation');
-
+		$($('.fb_match_progressbar')[0]).removeClass('ng-hide');
 		// after the animation is done hide it again
 		setTimeout(function() {
 			$($('.profile_carousel')[0]).removeClass('meet_animation');
 			$($('.profile_carousel')[0]).addClass('expand_animation');
 			setTimeout(function() {
 				$($('.profile_carousel')[0]).removeClass('expand_animation');
+				$($('.fb_match_progressbar')[0]).addClass('ng-hide');
 			}, 200);
 		}, 200);
 

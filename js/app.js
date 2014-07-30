@@ -52,20 +52,20 @@ fbApp.controller("profilePageController", function($scope,$http) {
 		profile:[
 		{
 			profile_name:"George Moh",
-			profile_photo:"https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xfp1/t1.0-9/969759_10151538556586451_978416852_n.jpg",
+			profile_photo:"https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/005/013/274/0d24646.jpg",
 			profile_title:"Software Engineer at Liquor.com",
 			profile_tagline:"Internet Entrepreneur looking for Co-founders."
 		},
 		{
 			profile_name:"Ian Loke",
 			profile_title:"Embedded Software Engineer at CSIT",
-			profile_photo:"https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/335346_10150433708213305_840705482_o.jpg",
+			profile_photo:"https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/221/303/1ec2ec4.jpg",
 			profile_tagline:"Looking for distributors in SEA region"
 		},
 		{
 			profile_name:"Oh Joo Siong",
 			profile_title:"Head of Sales at Innova Technologies",
-			profile_photo:"https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xaf1/t1.0-9/403168_10150586693139682_218634990_n.jpg",
+			profile_photo:"https://media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/221/367/27186e4.jpg",
 			profile_tagline:"Hope to meet PR/Journalists in the tech industry"
 		},
 		{

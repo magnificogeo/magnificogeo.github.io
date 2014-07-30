@@ -9,7 +9,7 @@ var fbApp = angular.module('fbApp',['ngRoute']);
 fbApp.config(function($routeProvider) {
 		$routeProvider
 			.when('/', {
-				templateUrl : 'index.html',
+				templateUrl : 'event.html',
 				//controller  : 'indexController'
 			})
 			.when('/match', {

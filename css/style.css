@@ -648,6 +648,7 @@
 	}
 
 	.fb_chat_profile_title, .fb_chat_profile_event_met {
+		margin-top:2px;
 		font-size: 0.7em;
 		font-weight: 300;
 	}

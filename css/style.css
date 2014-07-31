@@ -5,7 +5,7 @@
 	body {
 		/*background-color:#262C3A;*/
 		background-image:url('../img/body_bg.jpg');
-		background-repeat:no-repeatepeat;
+		background-repeat:no-repeat;
 		background-attachment:fixed;
 		background-size:100% 100%;
 		overflow-x:hidden;
@@ -580,6 +580,46 @@
 		background-repeat:no-repeat;
 		background-size:100%;
 	}
+
+	.fb_chat_own_bubble {
+		float:left;
+		position: relative;
+		margin-top:10px;
+		width:85%;
+		padding: 15px 15px 15px 15px;
+		word-wrap: break-word;
+		background: #CAF5D2;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+
+		color: #262C3A;
+		text-align: left;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1em;
+		font-weight: 300;
+	}
+
+
+	.fb_chat_other_bubble {
+		float:right;
+		margin-top:10px;
+		position: relative;
+		width:85%;
+		padding: 15px 15px 15px 15px;
+		word-wrap: break-word;
+		background: #FDDAC4;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+
+		color: #262C3A;
+		text-align: left;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1em;
+		font-weight: 300;
+	}
+
 
 	/*** Mock Ups Style ***/
 

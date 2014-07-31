@@ -592,7 +592,6 @@
 		-webkit-border-radius: 10px;
 		-moz-border-radius: 10px;
 		border-radius: 10px;
-
 		color: #262C3A;
 		text-align: left;
 		font-family: 'Roboto', sans-serif;
@@ -612,7 +611,6 @@
 		-webkit-border-radius: 10px;
 		-moz-border-radius: 10px;
 		border-radius: 10px;
-
 		color: #262C3A;
 		text-align: left;
 		font-family: 'Roboto', sans-serif;
@@ -620,7 +618,39 @@
 		font-weight: 300;
 	}
 
+	.fb_chat_profile_cover_profile_photo {
+		float:left;
+	}
 
+	.fb_chat_profile_cover_profile_photo img {
+		-moz-border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    border-radius: 50%;
+	    height:60px;
+	    width:60px;
+	    margin-top:2px;
+	    margin-left:20px;
+	}
+
+	.fb_chat_profile_details {
+		position:relative;
+		float:left;
+		margin-top:15px;
+		margin-left:15px;
+		color: #FCFCFC;
+		text-align: left;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.fb_chat_profile_name {
+		font-size: 0.8em;
+		font-weight: 400;
+	}
+
+	.fb_chat_profile_title, .fb_chat_profile_event_met {
+		font-size: 0.7em;
+		font-weight: 300;
+	}
 	/*** Mock Ups Style ***/
 
 	#screen_find_event {

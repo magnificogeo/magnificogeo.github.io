@@ -19,7 +19,10 @@ fbApp.config(function($routeProvider) {
 			})
 			.when('/chat', {
 				templateUrl : 'chat.html'
-			});
+			})
+			.otherwise({
+		        redirectTo: '/'
+	      	});
 	});
 
 

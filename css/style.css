@@ -6,17 +6,14 @@
 /* DOM Elements */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic,500,500italic,700italic,900,900italic,700);
 
+@media (max-width:800px) {
 	body {
 		/*background-color:#262C3A;*/
 		background-image:url('../img/body_bg.jpg');
 		background-repeat:no-repeat;
 		background-attachment:fixed;
 		background-size:100% 100%;
-		overflow-x:hidden;
-		overflow-y:hidden;
-		height:640px;
-		width:360px;
-		margin:auto;
+		overflow:hidden;
 	}
 
 	/** Blur container used for blurring effect in modal pop-ups **/
@@ -714,4 +711,4 @@
 	#screen_card_chat {
 		text-align:center;
 	}
-
+}

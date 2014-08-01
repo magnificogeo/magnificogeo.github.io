@@ -43,6 +43,8 @@ fbApp.controller("profilePageController", function($scope,$http) {
 	$scope.clickLater_count = 0;
 	$scope.clickMeet_count = 0;
 
+	$scope.clickAll_count = 0;
+
 	// Array to hold meet and later profile stacks
 	$scope.profile_meet_stack = [];
 	$scope.profile_later_stack = [];
@@ -1901,20 +1903,20 @@ fbApp.controller("profilePageController", function($scope,$http) {
 		}, 200);
 		
 		// two way data binding is updated here 
-		$scope.clickLater_count++;
+		$scope.clickAll_count++;
 	
-		if ( $scope.clickLater_count == $scope.profile_stack.profile.length) {
-			$scope.clickLater_count = 0; //reset profile stack to top
+		if ( $scope.clickAll_count == $scope.profile_stack.profile.length) {
+			$scope.clickAll_count = 0; //reset profile stack to top
 		}
 
 		// Filter button comes up after a few swipes
-		if ( $scope.clickLater_count > 3 ) {
+		if ( $scope.clickAll_count > 5 ) {
 			$($('.fb_match_profile_filter_button')[0]).removeClass('ng-hide');
 		}
-		$scope.fb_match_profile_name = $scope.profile_stack.profile[$scope.clickLater_count].profile_name;
-		$scope.fb_match_profile_photo = $scope.profile_stack.profile[$scope.clickLater_count].profile_photo;
-		$scope.fb_match_profile_title = $scope.profile_stack.profile[$scope.clickLater_count].profile_title;
-		$scope.fb_match_profile_tagline = $scope.profile_stack.profile[$scope.clickLater_count].profile_tagline;
+		$scope.fb_match_profile_name = $scope.profile_stack.profile[$scope.clickAll_count].profile_name;
+		$scope.fb_match_profile_photo = $scope.profile_stack.profile[$scope.clickAll_count].profile_photo;
+		$scope.fb_match_profile_title = $scope.profile_stack.profile[$scope.clickAll_count].profile_title;
+		$scope.fb_match_profile_tagline = $scope.profile_stack.profile[$scope.clickAll_count].profile_tagline;
 
 	}
 
@@ -1936,20 +1938,21 @@ fbApp.controller("profilePageController", function($scope,$http) {
 
 
 		$scope.clickMeet_count++;
+		$scope.clickAll_count++;
 		
 		// two way data binding is updated here
-		if ( $scope.clickMeet_count == $scope.profile_stack.profile.length) {
-			$scope.clickMeet_count = 0; //reset profile stack to top
+		if ( $scope.clickAll_count == $scope.profile_stack.profile.length) {
+			$scope.clickAll_count = 0; //reset profile stack to top
 		}
 
 		// Filter button comes up after a few swipes
-		if ( $scope.clickMeet_count > 3 ) {
+		if ( $scope.clickAll_count > 5 ) {
 			$($('.fb_match_profile_filter_button')[0]).removeClass('ng-hide');
 		}
-		$scope.fb_match_profile_name = $scope.profile_stack.profile[$scope.clickMeet_count].profile_name;
-		$scope.fb_match_profile_photo = $scope.profile_stack.profile[$scope.clickMeet_count].profile_photo;
-		$scope.fb_match_profile_title = $scope.profile_stack.profile[$scope.clickMeet_count].profile_title;
-		$scope.fb_match_profile_tagline = $scope.profile_stack.profile[$scope.clickMeet_count].profile_tagline;
+		$scope.fb_match_profile_name = $scope.profile_stack.profile[$scope.clickAll_count].profile_name;
+		$scope.fb_match_profile_photo = $scope.profile_stack.profile[$scope.clickAll_count].profile_photo;
+		$scope.fb_match_profile_title = $scope.profile_stack.profile[$scope.clickAll_count].profile_title;
+		$scope.fb_match_profile_tagline = $scope.profile_stack.profile[$scope.clickAll_count].profile_tagline;
 	
 
 	}
@@ -1971,15 +1974,19 @@ fbApp.directive('managecontactdirective', function() {
 });
 
 /***
-* Contact Card List Controller
+* Modal Test
 */
-fbApp.controller("ContactCardListController", function($scope,$http) {
-	$scope.openChat = function() {
-		//$($('#chatModal')[0]).foundation('reveal', 'open');
-		$($('#chatModal')[0]).removeClass('ng-hide');
-		$($('managecontactdirective')[0]).removeClass('ng-hide');
+fbApp.directive('testmodal', function() {
+	return {
+		restrict: 'E',
+		scope:true,
+		templateUrl:'templates/modal.html',
+		controller: function($scope,$http) {
+			
+		}
 	}
 });
+
 
 /***
 * Chat modal directive

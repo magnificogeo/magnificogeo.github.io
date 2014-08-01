@@ -30,51 +30,53 @@
           <div id="fb_menu_bar_notification_icon"></div>
       </div>
 
-      <div class="fb_profile_page" ng-controller="profilePageController">
+      <div class="blur_container">
+        <div class="fb_profile_page" ng-controller="profilePageController">
 
-       <div class="profile_carousel">
-          <div class="fb_match_profile_cover">
-            <div class="fb_match_profile_cover_profile_photo"><img src="{{fb_match_profile_photo}}"></div>
+         <div class="profile_carousel">
+            <div class="fb_match_profile_cover">
+              <div class="fb_match_profile_cover_profile_photo"><img src="{{fb_match_profile_photo}}"></div>
 
-            <div class="fb_match_profile_name">
-            {{fb_match_profile_name}}
-            </div>
-            
-            <div class="fb_match_profile_title">
-                {{fb_match_profile_title}}
-            </div>
-          </div>
-      
-          <div class="fb_match_profile_buttons clearfix">
-              <div class="fb_match_profile_button_icon"></div>
-              <div class="fb_match_profile_feed_icon"></div>
-          </div>
-
-          <div class="fb_match_profile_body">
-            <div class="fb_match_profile_filter_button ng-hide">
-              <div class="fb_match_profile_filter_button_icon">
+              <div class="fb_match_profile_name">
+              {{fb_match_profile_name}}
               </div>
-              <span class="fb_match_profile_filter_button_text">
-              Not finding the right person? Click here!
-              </span>
+              
+              <div class="fb_match_profile_title">
+                  {{fb_match_profile_title}}
+              </div>
             </div>
-            <a href="/#/chat"><div class="fb_match_profile_body_tagline_box">
-                <span class="fb_match_profile_body_tagline">
-                {{fb_match_profile_tagline}}
+        
+            <div class="fb_match_profile_buttons clearfix">
+                <div class="fb_match_profile_button_icon"></div>
+                <div class="fb_match_profile_feed_icon"></div>
+            </div>
+
+            <div class="fb_match_profile_body">
+              <div class="fb_match_profile_filter_button ng-hide">
+                <div class="fb_match_profile_filter_button_icon">
+                </div>
+                <span class="fb_match_profile_filter_button_text">
+                Not finding the right person? Click here!
                 </span>
-              </div></a> 
+              </div>
+              <a href="/#/chat"><div class="fb_match_profile_body_tagline_box">
+                  <span class="fb_match_profile_body_tagline">
+                  {{fb_match_profile_tagline}}
+                  </span>
+                </div></a> 
+            </div>
           </div>
-        </div>
 
-        <div class="fb_match_later_meet_button clearfix">
-          <div class="fb_match_later_button_icon" ng-click="clickLater()"></div>
-          <div class="fb_match_meet_button_icon" ng-click="clickMeet()"></div>
-        </div>
+          <div class="fb_match_later_meet_button clearfix">
+            <div class="fb_match_later_button_icon" ng-click="clickLater()"></div>
+            <div class="fb_match_meet_button_icon" ng-click="clickMeet()"></div>
+          </div>
 
-        <div class="fb_match_progressbar ng-hide">
-        <img src="img/slow-progress-bar-gif.gif" width="100%" height="50%">
-        </div>
+          <div class="fb_match_progressbar ng-hide">
+          <img src="img/slow-progress-bar-gif.gif" width="100%" height="50%">
+          </div>
 
+        </div>
       </div>
 
 
@@ -103,10 +105,9 @@
 
     -->
 
-    <managecontactdirective class="ng-hide">
+      <testmodal class="ng-hide">
 
-
-    </managecontactdirective>
+      </testmodal>
     
     <script src="vendor/foundation/js/vendor/jquery.js"></script>
     <script src="vendor/foundation/js/foundation.min.js"></script>

@@ -1,0 +1,29 @@
+/***
+* Fistbump 0.2 modal styles
+* This stylesheet contains general utility classes for styling consistent modals across
+* different screens @magnificogeo
+*/
+.fb_modal_blur {
+	-webkit-filter: blur(3px);
+	  -moz-filter: blur(3px);
+	  -o-filter: blur(3px);
+	  -ms-filter: blur(3px);
+	  filter: blur(3px); 
+}
+
+.fb_modal_close_button {
+	position:relative;
+	margin-left:268px;
+	color:#FFFFFF;
+	font-size:1.3em;
+	padding-top:5px;
+}
+
+.fb_modal_container {
+	position:absolute;
+	top:80px;
+	left:35px;
+	height:70%;
+	width:80%;
+	background-color:#494749;
+}

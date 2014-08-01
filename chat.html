@@ -23,96 +23,96 @@
     <!-- Find Event Screen -->
       <!-- Menu Bar -->
      
-
+    
       <div class="fb_menu_bar clearfix" ng-controller="NavBarController">
           <a href="/#/match"><div id="fb_menu_bar_drawer_icon"></div></a>
           <div id="fb_menu_bar_option_icon"></div>
           <div id="fb_menu_bar_notification_icon"></div>
       </div>
 
+      <div class="blur_container fb_modal_blur">
+        <div class="fb_chat_container">
+          <!-- Chat screen profile card -->
+          <div class="fb_chat_profile_card">
+            <!-- two way data binded -->
+              <div class="fb_chat_profile_cover_profile_photo"><img src="https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/005/013/274/0d24646.jpg"></div>
 
-      <div class="fb_chat_container">
-        <!-- Chat screen profile card -->
-        <div class="fb_chat_profile_card">
-          <!-- two way data binded -->
-            <div class="fb_chat_profile_cover_profile_photo"><img src="https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/005/013/274/0d24646.jpg"></div>
+              <div class="fb_chat_profile_details">
+                  <div class="fb_chat_profile_name">George Moh</div>
+                  <div class="fb_chat_profile_title">Software Engineer at Liquor.com</div>
+                  <div class="fb_chat_profile_event_met">Google I/O 2013</div>
+              </div>
+          </div>
 
-            <div class="fb_chat_profile_details">
-                <div class="fb_chat_profile_name">George Moh</div>
-                <div class="fb_chat_profile_title">Software Engineer at Liquor.com</div>
-                <div class="fb_chat_profile_event_met">Google I/O 2013</div>
-            </div>
+          <div class="fb_chat_body_box">
+              <div class="fb_chat_own_bubble">
+                Hi!
+                <div class="fb_chat_bubble_info clearfix">
+                  <div class="fb_chat_timestamp">Friday 12/18, 10.32pm</div>
+                  <div class="fb_chat_translate"><img src="img/google_translate.png"></div></div>
+                
+
+              </div>
+              <div class="fb_chat_other_bubble">
+                Sup?
+                <div class="fb_chat_bubble_info clearfix">
+                  <div class="fb_chat_timestamp">Friday 12/18, 10.32pm</div>
+                  <div class="fb_chat_translate"><img src="img/google_translate.png"></div></div>
+                
+              </div>
+              <div class="fb_chat_own_bubble">
+                Nah just checking in.
+                <div class="fb_chat_bubble_info clearfix">
+                  <div class="fb_chat_timestamp">Friday 12/18, 10.32pm</div>
+                  <div class="fb_chat_translate"><img src="img/google_translate.png"></div></div>
+                
+              </div>
+              <div class="fb_chat_own_bubble">
+                You down on sat?
+                <div class="fb_chat_bubble_info clearfix">
+                  <div class="fb_chat_timestamp">Friday 12/18, 10.32pm</div>
+                  <div class="fb_chat_translate"><img src="img/google_translate.png"></div></div>
+                
+              </div>
+              <div class="fb_chat_other_bubble">
+                No man. I'm cool. You go ahead brah.
+                <div class="fb_chat_bubble_info clearfix">
+                  <div class="fb_chat_timestamp">Friday 12/18, 10.32pm</div>
+                  <div class="fb_chat_translate"><img src="img/google_translate.png"></div></div>
+                
+              </div>
+              <div class="fb_chat_own_bubble">
+                A'righty. Catch ya later bro.
+                <div class="fb_chat_bubble_info clearfix">
+                  <div class="fb_chat_timestamp">Friday 12/18, 10.32pm</div>
+                  <div class="fb_chat_translate"><img src="img/google_translate.png"></div></div>
+                
+              </div>
+              <div class="fb_chat_other_bubble">
+                Nooice!
+                <div class="fb_chat_bubble_info clearfix">
+                  <div class="fb_chat_timestamp">Friday 12/18, 10.32pm</div>
+                  <div class="fb_chat_translate"><img src="img/google_translate.png"></div></div>
+                
+              </div>
+              <div class="fb_chat_own_bubble">
+                Nooice!
+                <div class="fb_chat_bubble_info clearfix"> 
+                  <div class="fb_chat_timestamp">Friday 12/18, 10.32pm</div>
+                  <div class="fb_chat_translate"><img src="img/google_translate.png"></div></div>
+                
+              </div>
+          </div>
+
+          <div class="fb_chat_input_box">
+              <div class="fb_chat_input_line">
+                <input type="text" placeholder="Type your text here">
+                <div class="fb_chat_arrow" ng-click="sendChat"></div>
+              </div>
+              
+          </div>
         </div>
-
-        <div class="fb_chat_body_box">
-            <div class="fb_chat_own_bubble">
-              Hi!
-              <div class="fb_chat_bubble_info clearfix">
-                <div class="fb_chat_timestamp">Friday 12/18, 10.32pm</div>
-                <div class="fb_chat_translate"><img src="img/google_translate.png"></div></div>
-              
-
-            </div>
-            <div class="fb_chat_other_bubble">
-              Sup?
-              <div class="fb_chat_bubble_info clearfix">
-                <div class="fb_chat_timestamp">Friday 12/18, 10.32pm</div>
-                <div class="fb_chat_translate"><img src="img/google_translate.png"></div></div>
-              
-            </div>
-            <div class="fb_chat_own_bubble">
-              Nah just checking in.
-              <div class="fb_chat_bubble_info clearfix">
-                <div class="fb_chat_timestamp">Friday 12/18, 10.32pm</div>
-                <div class="fb_chat_translate"><img src="img/google_translate.png"></div></div>
-              
-            </div>
-            <div class="fb_chat_own_bubble">
-              You down on sat?
-              <div class="fb_chat_bubble_info clearfix">
-                <div class="fb_chat_timestamp">Friday 12/18, 10.32pm</div>
-                <div class="fb_chat_translate"><img src="img/google_translate.png"></div></div>
-              
-            </div>
-            <div class="fb_chat_other_bubble">
-              No man. I'm cool. You go ahead brah.
-              <div class="fb_chat_bubble_info clearfix">
-                <div class="fb_chat_timestamp">Friday 12/18, 10.32pm</div>
-                <div class="fb_chat_translate"><img src="img/google_translate.png"></div></div>
-              
-            </div>
-            <div class="fb_chat_own_bubble">
-              A'righty. Catch ya later bro.
-              <div class="fb_chat_bubble_info clearfix">
-                <div class="fb_chat_timestamp">Friday 12/18, 10.32pm</div>
-                <div class="fb_chat_translate"><img src="img/google_translate.png"></div></div>
-              
-            </div>
-            <div class="fb_chat_other_bubble">
-              Nooice!
-              <div class="fb_chat_bubble_info clearfix">
-                <div class="fb_chat_timestamp">Friday 12/18, 10.32pm</div>
-                <div class="fb_chat_translate"><img src="img/google_translate.png"></div></div>
-              
-            </div>
-            <div class="fb_chat_own_bubble">
-              Nooice!
-              <div class="fb_chat_bubble_info clearfix"> 
-                <div class="fb_chat_timestamp">Friday 12/18, 10.32pm</div>
-                <div class="fb_chat_translate"><img src="img/google_translate.png"></div></div>
-              
-            </div>
-        </div>
-
-        <div class="fb_chat_input_box">
-            <div class="fb_chat_input_line">
-              <input type="text" placeholder="Type your text here">
-              <div class="fb_chat_arrow" ng-click="sendChat"></div>
-            </div>
-            
-        </div>
-      </div>
-
+    </div>
 
 
 
@@ -186,10 +186,9 @@
 
     -->
 
-    <managecontactdirective class="ng-hide">
+    <testmodal>
 
-
-    </managecontactdirective>
+    </testmodal>
     
     <script src="vendor/foundation/js/vendor/jquery.js"></script>
     <script src="vendor/foundation/js/foundation.min.js"></script>
@@ -197,4 +196,5 @@
       $(document).foundation();
     </script>
   </body>
+
 </html>

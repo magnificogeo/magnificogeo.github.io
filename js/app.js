@@ -1948,6 +1948,7 @@ fbApp.controller("profilePageController", function($scope,$http) {
 		// Filter button comes up after a few swipes
 		if ( $scope.clickAll_count > 5 ) {
 			$($('.fb_match_profile_filter_button')[0]).removeClass('ng-hide');
+			$scope.openModal(); // make open modal accept an object that has information it needs to open 
 		}
 		$scope.fb_match_profile_name = $scope.profile_stack.profile[$scope.clickAll_count].profile_name;
 		$scope.fb_match_profile_photo = $scope.profile_stack.profile[$scope.clickAll_count].profile_photo;
@@ -1979,10 +1980,20 @@ fbApp.directive('managecontactdirective', function() {
 fbApp.directive('testmodal', function() {
 	return {
 		restrict: 'E',
-		scope:true,
 		templateUrl:'templates/modal.html',
 		controller: function($scope,$http) {
-			
+
+			// close modal and unblur
+			$scope.closeModal = function() {
+				$($('testmodal')[0]).addClass('ng-hide');
+				$($('.blur_container')[0]).removeClass('fb_modal_blur');
+			}
+
+			$scope.openModal = function() {
+				$($('.blur_container')[0]).addClass('fb_modal_blur');
+				$($('testmodal')[0]).removeClass('ng-hide');
+				$($('testmodal')[0]).addClass('expand_animation');
+			}
 		}
 	}
 });

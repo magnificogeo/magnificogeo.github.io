@@ -9,15 +9,16 @@ var fbApp = angular.module('fbApp',['ngRoute']);
 fbApp.config(function($routeProvider) {
 		$routeProvider
 			.when('/', {
-				templateUrl : 'event.html',
-				//controller  : 'indexController'
+				templateUrl : 'splash.html'
+			})
+			.when('/event', {
+				templateUrl : 'event.html'
 			})
 			.when('/match', {
-				templateUrl : 'match.html',
-				//controller  : 'matchController'
-			}).when('/chat', {
-				templateUrl : 'chat.html',
-				//controller : 'chatController'
+				templateUrl : 'match.html'
+			})
+			.when('/chat', {
+				templateUrl : 'chat.html'
 			});
 	});
 

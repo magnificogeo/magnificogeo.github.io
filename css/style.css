@@ -653,6 +653,23 @@
 		font-size: 0.7em;
 		font-weight: 300;
 	}
+
+	.fb_chat_timestamp {
+		float:left;
+		margin-top:13px;
+		margin-left:5%;
+		font-size: 0.3em;
+		font-weight: 300;
+		color:#959595;
+	}
+
+	.fb_chat_translate img {
+		float:left;
+		margin-top:8px;
+		margin-left:48%;
+		height:8%;
+		width:8%;
+	}
 	/*** Mock Ups Style ***/
 
 	#screen_find_event {

@@ -1979,6 +1979,8 @@ fbApp.directive('managecontactdirective', function() {
 */
 fbApp.directive('testmodal', function() {
 	return {
+		// there's no scoping. the functions defined in modal controller is
+		// global
 		restrict: 'E',
 		templateUrl:'templates/modal.html',
 		controller: function($scope,$http) {
@@ -1990,9 +1992,11 @@ fbApp.directive('testmodal', function() {
 			}
 
 			$scope.openModal = function() {
-				$($('.blur_container')[0]).addClass('fb_modal_blur');
 				$($('testmodal')[0]).removeClass('ng-hide');
 				$($('testmodal')[0]).addClass('expand_animation');
+				setTimeout(function(){
+					$($('.blur_container')[0]).addClass('fb_modal_blur');
+				}, 800);
 			}
 		}
 	}

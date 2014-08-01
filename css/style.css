@@ -163,6 +163,19 @@
 
 	}
 
+	.fb_event_body_box_event_info_button {
+		position:relative;
+		margin-top:47px;
+		float:right;
+	}
+
+	.fb_event_body_box_event_info_button img {
+		position:relative;
+		height:50px;
+	}
+
+
+
 	.fb_event_body_box_event_name {
 		float:left;
 		position:relative;
@@ -171,6 +184,9 @@
 		font-size:0.6em;
 		margin-top:25px;
 		margin-left:20px;
+		/*border:1px solid red; */
+		width:55%;
+		word-wrap:break-word;
 		font-weight:bold;
 	}
 
@@ -386,6 +402,17 @@
       -moz-animation-iteration-count: 1;
       -moz-animation-timing-function: ease-out;
     }
+
+    .shrink_animation {
+      -webkit-animation-name: shrink_animation;
+      -webkit-animation-duration: 0.3s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: ease-out;
+      -moz-animation-name: shrink_animation;
+      -moz-animation-duration: 0.3s;
+      -moz-animation-iteration-count: 1;
+      -moz-animation-timing-function: ease-out;
+    }
 /*
 	@-webkit-keyframes expand {
 	      from {
@@ -447,9 +474,24 @@
 		}
 		100% {
 			-webkit-transform:scale(1);
-			-moz-transform:scale(0.5);
+			-moz-transform:scale(1);
 			transform:scale(1);
 			opacity:1;
+		}
+	}
+
+	@-webkit-keyframes shrink_animation {
+		0% { 
+			-webkit-transform:scale(1);
+			-moz-transform:scale(1);
+			transform:scale(1);
+			opacity:1;
+		}
+		100% {
+			-webkit-transform:scale(0.5);
+			-moz-transform:scale(0.5);
+			transform:scale(0.5);
+			opacity:0;
 		}
 	}
 
@@ -498,9 +540,24 @@
 		}
 		100% {
 			-webkit-transform:scale(1);
-			-moz-transform:scale(0.5);
+			-moz-transform:scale(1);
 			transform:scale(1);
 			opacity:1;
+		}
+	}
+
+	@-moz-keyframes shrink_animation {
+		0% { 
+			-webkit-transform:scale(1);
+			-moz-transform:scale(1);
+			transform:scale(1);
+			opacity:1;
+		}
+		100% {
+			-webkit-transform:scale(0.5);
+			-moz-transform:scale(0.5);
+			transform:scale(0.5);
+			opacity:0;
 		}
 	}
 

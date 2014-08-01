@@ -1987,7 +1987,9 @@ fbApp.directive('testmodal', function() {
 
 			// close modal and unblur
 			$scope.closeModal = function() {
+		
 				$($('testmodal')[0]).addClass('ng-hide');
+				
 				//$($('.blur_container')[0]).removeClass('fb_modal_blur');
 			}
 

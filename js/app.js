@@ -1988,15 +1988,15 @@ fbApp.directive('testmodal', function() {
 			// close modal and unblur
 			$scope.closeModal = function() {
 				$($('testmodal')[0]).addClass('ng-hide');
-				$($('.blur_container')[0]).removeClass('fb_modal_blur');
+				//$($('.blur_container')[0]).removeClass('fb_modal_blur');
 			}
 
 			$scope.openModal = function() {
 				$($('testmodal')[0]).removeClass('ng-hide');
 				$($('testmodal')[0]).addClass('expand_animation');
-				setTimeout(function(){
+				/*setTimeout(function(){
 					$($('.blur_container')[0]).addClass('fb_modal_blur');
-				}, 800);
+				}, 800);*/
 			}
 		}
 	}

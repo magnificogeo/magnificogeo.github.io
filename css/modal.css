@@ -21,9 +21,10 @@
 
 .fb_modal_container {
 	position:absolute;
-	top:80px;
-	left:35px;
-	height:70%;
-	width:80%;
+	top:65px;
+	left:30px;
+	height:75%;
+	width:85%;
 	background-color:#494749;
+	border-radius:8px;
 }

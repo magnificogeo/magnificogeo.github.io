@@ -1954,8 +1954,14 @@ fbApp.controller("profilePageController", function($scope,$http) {
 		// Filter button comes up after a few swipes
 		if ( $scope.clickAll_count > 5 ) {
 			$($('.fb_match_profile_filter_button')[0]).removeClass('ng-hide');
+		}
+
+
+		// Match mockup comes after 10
+		if ( $scope.clickAll_count == 10 || $scope.clickAll_count == 14 ) {
 			$scope.openModal(); // make open modal accept an object that has information it needs to open 
 		}
+
 		$scope.fb_match_profile_name = $scope.profile_stack.profile[$scope.clickAll_count].profile_name;
 		$scope.fb_match_profile_photo = $scope.profile_stack.profile[$scope.clickAll_count].profile_photo;
 		$scope.fb_match_profile_title = $scope.profile_stack.profile[$scope.clickAll_count].profile_title;

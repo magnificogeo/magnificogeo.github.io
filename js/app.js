@@ -38,6 +38,8 @@ fbApp.controller("NavBarController", function($scope,$http) {
 		}
 	}
 });
+
+
 /***
 *  Match Page Controller
 */
@@ -1998,8 +2000,47 @@ fbApp.directive('testmodal', function() {
 			}
 
 			$scope.openModal = function() {
+
 				$($('testmodal')[0]).removeClass('ng-hide');
 				$($('testmodal')[0]).addClass('expand_animation');
+				/*setTimeout(function(){
+					$($('.blur_container')[0]).addClass('fb_modal_blur');
+				}, 800);*/
+			}
+		}
+	}
+});
+
+/***
+* Event Page Controller
+***/
+fbApp.controller("EventPageController", function($scope,$http) {
+
+});
+
+/***
+* Event Modal
+*/
+fbApp.directive('eventinfomodal', function() {
+	return {
+		// there's no scoping. the functions defined in modal controller is
+		// global
+		restrict: 'E',
+		templateUrl:'templates/event_info_modal.html',
+		controller: function($scope,$http) {
+
+			// close modal and unblur
+			$scope.closeEventModal = function() {
+		
+				$($('eventinfomodal')[0]).addClass('ng-hide');
+				
+				//$($('.blur_container')[0]).removeClass('fb_modal_blur');
+			}
+
+			$scope.openEventModal = function() {
+
+				$($('eventinfomodal')[0]).removeClass('ng-hide');
+				$($('eventinfomodal')[0]).addClass('expand_animation');
 				/*setTimeout(function(){
 					$($('.blur_container')[0]).addClass('fb_modal_blur');
 				}, 800);*/

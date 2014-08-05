@@ -25,6 +25,30 @@
 	left:30px;
 	height:80%;
 	width:85%;
-	background-color:#494749;
+	/*background-color:#494749;*/
 	border-radius:8px;
+
+	border-radius: 8px;
+	/* Rectangle 5: */
+	background-image: -o-linear-gradient(-133deg, #4D5567 0%, #23262F 100%);
+	background-image: -moz-linear-gradient(-133deg, #4D5567 0%, #23262F 100%);
+	background-image: -ms-linear-gradient(-133deg, #4D5567 0%, #23262F 100%);
+	background-image: linear-gradient(-223deg, #4D5567 0%, #23262F 100%);
+}
+
+.fb_event_modal_container {
+	position:absolute;
+	top:65px;
+	left:30px;
+	height:80%;
+	width:85%;
+	/*background-color:#494749;*/
+	border-radius:8px;
+
+	border-radius: 8px;
+	/* Rectangle 5: */
+	background-image: url('../img/event_info_modal_bg.png');
+	background-repeat:no-repeat;
+	background-size:99%;
+
 }

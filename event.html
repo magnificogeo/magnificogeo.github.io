@@ -38,7 +38,7 @@
         </div>
 
         <!-- Event Search Body Box -->
-        <div class="fb_event_body_box">
+        <div class="fb_event_body_box" ng-controller="EventPageController">
           <div id="fb_event_body_box_heading">Available Networks</div>
           <a href="/#/match"><div class="fb_event_body_box_event_card">
             <div class="fb_event_body_box_event_card_event_icon">
@@ -53,11 +53,11 @@
                   </span>
               </span>
 
-            </div>
+            </div></a>
 
-            <div class="fb_event_body_box_event_info_button"><img src="img/event_info.png"></div>
+            <div class="fb_event_body_box_event_info_button" ng-click="openEventModal()"><img src="img/event_info.png"></div>
 
-          </div></a>
+          </div>
           <a href="/#/match"><div class="fb_event_body_box_event_card">
             <div class="fb_event_body_box_event_card_event_icon">
               <img src="img/event_icon_expo_asia.png">
@@ -70,11 +70,11 @@
                     Meet industry movers and shakers here.
                   </span>
               </span>
-            </div>
+            </div></a>
 
-            <div class="fb_event_body_box_event_info_button"><img src="img/event_info.png"></div>
+            <div class="fb_event_body_box_event_info_button" ng-click="openEventModal()"><img src="img/event_info.png"></div>
 
-          </div></a>
+          </div>
           <a href="/#/match"><div class="fb_event_body_box_event_card">
             <div class="fb_event_body_box_event_card_event_icon">
               <img src="img/event_icon_ces.png">
@@ -87,12 +87,12 @@
                     Meet industry movers and shakers here.
                   </span>
               </span>
-            </div>
+            </div></a>
 
-            <div class="fb_event_body_box_event_info_button"><img src="img/event_info.png"></div>
 
-          </div></a>
-          <a href="/#/match"><div class="fb_event_body_box_event_card">
+            <div class="fb_event_body_box_event_info_button" ng-click="openEventModal()"><img src="img/event_info.png"></div>
+
+          </div>          <a href="/#/match"><div class="fb_event_body_box_event_card">
             <div class="fb_event_body_box_event_card_event_icon">
               <img src="img/event_icon_sgbiz.png">
               <span class="fb_event_body_box_event_name">
@@ -104,17 +104,17 @@
                     Meet industry movers and shakers here.
                   </span>
               </span>
-            </div>
+            </div></a>
 
-            <div class="fb_event_body_box_event_info_button"><img src="img/event_info.png"></div>
+            <div class="fb_event_body_box_event_info_button" ng-click="openEventModal()"><img src="img/event_info.png"></div>
 
-          </div></a>
+          </div>
         </div>
       </div>
 
-      <testmodal class="ng-hide">
+      <eventinfomodal class="ng-hide">
 
-      </testmodal>
+      </eventinfomodal>
     <!-- Mock ups 
 
     <div id="screen_find_event">

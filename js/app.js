@@ -60,7 +60,7 @@ fbApp.controller("profilePageController", function($scope,$http) {
 		profile:[
 		{
 			profile_name:"George Moh",
-			profile_photo:"https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/005/013/274/0d24646.jpg",
+			profile_photo:"https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/8/005/093/2a7/27fae5a.jpg",
 			profile_title:"Software Engineer at Liquor.com",
 			profile_tagline:"Internet Entrepreneur looking for Co-founders."
 		},
